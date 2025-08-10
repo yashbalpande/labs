@@ -116,7 +116,7 @@ const Page = () => {
    
                 </div>
                 <div className='flex mt-40 gap-[10%] justify-center items-center text-[#54453E] p-6'>
-                  <h1 className='text-2xl text-center font-black text-[#54453E] font-lilita mb-2 [text-shadow:_-1px_-1px_0_#000,_1px_-1px_0_#000,_-1px_1px_0_#000,_1px_1px_0_#000]'>Inside Our 5-Step Growth Engine</h1>
+                  <h1 className='text-2xl  border-black text-center font-black text-[#54453E] font-lilita mb-2'>Inside Our 5-Step Growth Engine</h1>
                   <p className='text-lg text-center text-[#54453E] font-montserrat font-light'>Growth isn't guessed. It's engineered</p>
                 </div>
             <div className="h-screen mt-[5%] flex items-center justify-center">
