@@ -49,8 +49,8 @@ const Footer = () => {
                     <h3 className="font-black text-[#54453E] font-lilita text-2xl mb-2">Stay in the Lab Loop</h3>
                     <p className="mb-3  font-montserrat text-lg text-[#54453E]">Want in on our experiments, strategies, and marketing breakthroughs? Drop your email below — we’ll only send stuff worth testing!</p>
                     <div className="flex space-x-2 mb-3">
-                        <input type="text" placeholder="Name" className="w-1/2 px-3 py-2 rounded-md bg-white" />
-                        <input type="email" placeholder="Email" className="w-1/2 px-3 py-2 rounded-md bg-white" />
+                        <input type="text" placeholder="Name" className="w-1/2 px-3 py-2 rounded-md bg-white border border-gray-300 placeholder:text-gray-700" />
+                        <input type="email" placeholder="Email" className="w-1/2 px-3 py-2 rounded-md bg-white border border-gray-300 placeholder:text-gray-700" />
                     </div>
                     <button className="w-full bg-[#5A3C2D] text-white py-2 rounded-md">Ready for the experiment!</button>
                 </div>

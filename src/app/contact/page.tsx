@@ -89,13 +89,13 @@ const ContactPage = () => {
                 </div>
             </div>
 
-            <div className="min-h-[50vh] w-[70%] text-black mt-[20%] mx-auto relative z-20">
+            <div className="min-h-[50vh] w-[70%] text-black mt-[25%] mx-auto relative z-20">
                 
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
-                    <h2 className="text-xl font-bold text-[#3A2E2B]">
+                    <h1 className="text-xl font-black border-2 border-black text-[#54453E] font-lilita tracking-wider leading-tight">
                         Here's what to expect
-                    </h2>
-                    <p className="text-[#3A2E2B]/80 max-w-lg mt-2 lg:mt-0">
+                    </h1>
+                    <p className="text-[#54453E] font-montserrat font-light max-w-lg mt-2 lg:mt-0">
                         Once your form lands in our inbox, we'll circle back within 24–48 hours with brainpower locked and loaded.
                     </p>
                 </div>

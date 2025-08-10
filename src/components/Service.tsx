@@ -14,7 +14,7 @@ type ServiceProps = {
 
 const Service: React.FC<ServiceProps> = ({ number, title, features }) => {
   return (
-    <div className="border-t border-gray-300 py-10 w-[80%] mx-auto mt-5">
+    <div className="border-t border-gray-300 py-10 w-[80%] mx-auto mt-5 font-montserrat">
       <div className="flex flex-col md:flex-row md:gap-10">
         {/* Left Section */}
         <div className="flex-1">
@@ -34,7 +34,7 @@ const Service: React.FC<ServiceProps> = ({ number, title, features }) => {
               className="flex justify-between items-center p-4 border rounded-lg shadow-sm bg-white"
             >
               <span className="text-sm text-[#3A2E2B]">{feature.title}</span>
-              <div className="w-8 h-8 relative">
+              <div className="w-16 h-16 relative">
                 <Image
                   src={feature.icon}
                   alt={feature.title}

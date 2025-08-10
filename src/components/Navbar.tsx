@@ -18,11 +18,11 @@ const Navbar = () => {
         <Image src={'/logo.png'} alt="logo" height={80} width={80} />
       </div>
 
-      <div className="flex gap-6 text-gray-800 text-md">
+      <div className="flex gap-6 text-gray-800 text-lg">
         <Link 
           href="/" 
           onClick={handleHomeClick}
-          className={`hover:text-black transition font-montserrat cursor-pointer px-2 py-1 ${
+          className={`hover:text-black transition font-montserrat cursor-pointer  px-2  pb-2 ${
             pathname === '/' ? 'font-bold' : ''
           }`}
         >
@@ -30,7 +30,7 @@ const Navbar = () => {
         </Link>
         <Link 
           href="/services"
-          className={`hover:text-black transition font-montserrat cursor-pointer px-2 py-1 ${
+          className={`hover:text-black transition font-montserrat cursor-pointer px-2  ${
             pathname === '/services' ? 'font-bold' : ''
           }`}
         >

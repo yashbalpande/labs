@@ -240,6 +240,7 @@ export default function Home() {
               className="w-84 h-auto"
             />
           </div>
+      
 
           <div className="absolute right-0 z-10">
             <Image
@@ -256,9 +257,12 @@ export default function Home() {
           </div>
         </div>
 
-
+        <div className='flex mt-[20%] gap-[10%] justify-center items-center text-[#54453E] p-6'>
+                  <h1 className='text-2xl  border-black text-center font-black text-[#54453E] font-lilita mb-2'>Inside Our 5-Step Growth Engine</h1>
+                  <p className='text-lg text-center text-[#54453E] font-montserrat font-light'>Growth isn't guessed. It's engineered</p>
+                </div>
       </div>
-      <div className="h-screen mt-[10%] flex items-center justify-center">
+      <div className="h-screen  flex items-center justify-center">
         <Image 
           src="/digram.png" 
           alt="diagram" 
@@ -301,15 +305,6 @@ export default function Home() {
 
       </div>
       <Footer />
-
-
-
-
-
-
-
-
-
 
     </div>
   );
