@@ -1,5 +1,4 @@
 'use client'
-
 import Card from "@/components/Card";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -36,31 +35,31 @@ export default function Home() {
   }, []);
 
   return (
-    <div key="home-page" className="min-h-screen w-full bg-white text-black">
+    <div key="home-page" className="min-h-screen w-full bg-white text-[#54453E]">
       <div
         className="w-full h-[70vh] bg-cover bg-center relative"
-        style={{ backgroundImage: "url('/hero-image.png')" }}
+        style={{ backgroundImage: "url('/vector.png')" }}
       >
         <div className="relative z-50">
           <Navbar />
         </div>
 
         <div className="mt-10 h-[35%] flex flex-col items-center justify-between text-center px-4">
-          <h1 className="text-4xl font-lilita text-[#54453E]  font-bold  text-outline-[##000000]">
+          <h1 className="text-4xl font-lilita text-[#54453E]     ">
             Welcome to the Lab
           </h1>
-          <h1 className="text-2xl text-outline-[#000000]  text-[#54453E] font-montserrat leading-tight max-w-[600px]">
+          <h1 className="text-2xl   text-[#54453E] font-montserrat  max-w-[600px]">
             Where strategy is tested, results are proven,<br />
             and growth is the only constant.
           </h1>
-          <button className="text-white bg-[#54453E] px-12 py-3 rounded-lg ">
+          <button className="text-white font-montserrat bg-[#54453E] px-12 py-3 rounded-lg ">
             Begin the Experiment!
           </button>
         </div>
 
 
         <div className="absolute left-1/2 bottom-[-40px] transform -translate-x-1/2 z-20">
-          <div className=" p-2 w-40 h-40 flex items-center justify-center ">
+          <div className=" p-2 w-60 h-30 flex items-center justify-center ">
             <Image
               src="/logo.png"
               alt="logo"
@@ -218,7 +217,7 @@ export default function Home() {
       </div>
 
 
-      <div className="w-full relative bg-white mt-20">
+      <div className="w-full  relative bg-white mt-20">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 px-8 max-w-6xl mx-auto">
           <h2 className="text-xl md:text-2xl font-lilita text-[#54453E] font-bold text-center md:text-left">
             Client Observations and <br /> Inference
@@ -231,7 +230,7 @@ export default function Home() {
 
        
         <div className="w-full h-[50vh] flex items-start justify-between mt-20 relative no-scrollbar">
-          <div className="absolute left-0 z-10">
+          <div className="absolute left-0 ">
             <Image
               src="/cloud-left.png"
               alt="clouds-left"
@@ -242,7 +241,7 @@ export default function Home() {
           </div>
       
 
-          <div className="absolute right-0 z-10">
+          <div className="absolute right-0 ">
             <Image
               src="/cloud-right.png"
               alt="clouds-right"
@@ -252,7 +251,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="absolute top-[45%] z-0 w-full">
+          <div className="absolute top-[36%] z-0 w-full">
             <Slider />
           </div>
         </div>
@@ -262,7 +261,7 @@ export default function Home() {
                   <p className='text-lg text-center text-[#54453E] font-montserrat font-light'>Growth isn't guessed. It's engineered</p>
                 </div>
       </div>
-      <div className="h-screen  flex items-center justify-center">
+      <div className="h-[50vh] mb-20 flex items-center justify-center">
         <Image 
           src="/digram.png" 
           alt="diagram" 
@@ -277,11 +276,11 @@ export default function Home() {
 
       <div className="h-screen w-full flex items-center">
         <div className="w-[50%] h-full flex flex-col justify-center ml-[20%]">
-          <h1 className="text-6xl font-extralight text-[#54453E] font-montserrat">Experiment.</h1>
+          <h1 className="text-6xl font-normal text-[#54453E] font-montserrat">Experiment.</h1>
           <br />
-          <h1 className="text-6xl font-extralight text-[#54453E] font-montserrat">Evolve.</h1>
+          <h1 className="text-6xl font-normal text-[#54453E] font-montserrat">Evolve.</h1>
           <br />
-          <h1 className="text-6xl font-extralight text-[#54453E] font-montserrat">Expand.</h1>
+          <h1 className="text-6xl font-normal text-[#54453E] font-montserrat">Expand.</h1>
 
           <p className="mt-6 text-sm text-[#54453E] font-montserrat leading-relaxed w-[70%]">
             We believe that brands deserve more than <br />just ‘social media management’ or ‘ad <br /> campaigns’.
@@ -298,7 +297,7 @@ export default function Home() {
 
         <div className="w-[50%] h-full">
           <div
-            className="mt-[20%] w-72 h-84 rounded-md  bg-[url('/ceo.png')] bg-cover bg-center"
+            className="mt-[34%] w-72 h-84 rounded-md  bg-[url('/ceo.png')] bg-cover bg-center"
           ></div>
         </div>
 

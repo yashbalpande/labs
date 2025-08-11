@@ -36,7 +36,7 @@ export const Slider: React.FC = () => {
   ];
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative z-50">
       <div 
         className="flex pb-6 overflow-x-auto scroll-smooth snap-x snap-mandatory"
         role="list"

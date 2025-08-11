@@ -53,7 +53,7 @@ const Page = () => {
                 
             </div>
 
-            <div className="min-h-screen text-black mt-[20%] ml-[5%]">
+            <div className="min-h-screen text-[#54453E] mt-[20%] ml-[5%]">
                 <h1 className='text-3xl font-montserrat ml-[10%]'>Our Service Include</h1>
                 <Service
                     number="01"
@@ -92,43 +92,43 @@ const Page = () => {
                     ]}
                 />
             </div>
-                         
-                                                                                                       <div className='flex justify-end m-0 p-0'>
-                                                       <Image 
-                                                         src="/scope.png" 
-                                                         alt="diagram" 
-                                                         width={300} 
-                                                         height={200}
-                                                         className="object-contain"
-                                                       />
-                                                     </div>
-                                                     
-                                                     <div className='h-[2vh] w-full m-0 p-0 flex items-center justify-start gap-2 overflow-hidden'>
-                                                    <div className='bg-[#4DD1F4] w-[15%] h-full rounded-r-md '> </div>
-                                                    <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
-                                                    <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
-                                                    <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
-                                                    <div className='bg-[#4DD1F4]w-[15%] h-full rounded-md'> </div>
-                                                    <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
-                                                    <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
-                                                    <div className='bg-[#4DD1F4] w-[15%] h-full rounded-l-md'> </div>
-              
-   
-                </div>
-                <div className='flex mt-40 gap-[10%] justify-center items-center text-[#54453E] p-6'>
-                  <h1 className='text-2xl  border-black text-center font-black text-[#54453E] font-lilita mb-2'>Inside Our 5-Step Growth Engine</h1>
-                  <p className='text-lg text-center text-[#54453E] font-montserrat font-light'>Growth isn't guessed. It's engineered</p>
-                </div>
-            <div className="h-screen mt-[5%] flex items-center justify-center">
-                
-        <Image 
-          src="/digram.png" 
-          alt="diagram" 
-          width={900} 
-          height={600}
-          className="object-contain"
-        />
-      </div>
+            
+            <div className='flex justify-end m-0 p-0'>
+                <Image 
+                    src="/scope.png" 
+                    alt="diagram" 
+                    width={300} 
+                    height={200}
+                    className="object-contain"
+                />
+            </div>
+            
+            <div className='h-[2vh] w-full m-0 p-0 flex items-center justify-start gap-2 overflow-hidden'>
+                <div className='bg-[#4DD1F4] w-[15%] h-full rounded-r-md '> </div>
+                <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
+                <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
+                <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
+                <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
+                <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
+                <div className='bg-[#4DD1F4] w-[15%] h-full rounded-md'> </div>
+                <div className='bg-[#4DD1F4] w-[15%] h-full rounded-l-md'> </div>
+            </div>
+            
+            <div className='flex mt-[5%] gap-[10%] justify-center items-center text-[#54453E] p-6'>
+                <h1 className='text-2xl  border-black text-center font-black text-[#54453E] font-lilita mb-2'>Inside Our 5-Step Growth Engine</h1>
+                <p className='text-lg text-center text-[#54453E] font-montserrat font-light'>Growth isn't guessed. It's engineered</p>
+            </div>
+            
+            <div className="h-[70vh]  flex items-center justify-center">
+                <Image 
+                    src="/digram.png" 
+                    alt="diagram" 
+                    width={900} 
+                    height={600}
+                    className="object-contain"
+                />
+            </div>
+      
 
 
       <div className="bg-[#4DD1F4] w-full h-[20vh]"></div>
@@ -156,7 +156,7 @@ const Page = () => {
 
         <div className="w-[50%] h-full">
           <div
-            className="mt-[20%] w-72 h-84 rounded-md  bg-[url('/ceo.png')] bg-cover bg-center"
+            className="mt-[34%] w-72 h-84 rounded-md  bg-[url('/ceo.png')] bg-cover bg-center"
           ></div>
         </div>
 
