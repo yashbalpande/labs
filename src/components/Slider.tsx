@@ -36,30 +36,34 @@ export const Slider: React.FC = () => {
   ];
 
   return (
-    <div className="w-full relative z-50">
-      <div 
-        className="flex pb-6 overflow-x-auto scroll-smooth snap-x snap-mandatory"
-        role="list"
-        aria-label="Testimonials"
-      >
-        {testimonials.map((t) => (
-          <div
-            key={t.id}
-            role="listitem"
-            className="flex-none w-[90vw] sm:w-[50vw] lg:w-[35%] h-[50vh] bg-white border-2 border-black mx-4 rounded-md p-4 snap-start"
-          >
-            <div className="h-[80%] w-full flex flex-col gap-3">
-              <div className="w-full">
-                <h1 className="text-black font-bold text-3xl">{t.name}</h1>
-                <h2 className="text-zinc-500 text-2xl font-extralight">{t.title}</h2>
-              </div>
-              <div className="w-full h-full pt-4 pr-2 overflow-y-auto">
-                <p className="text-sm">{t.content}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+    <div className="flex w-full  m-0 p-0 h-full w-full  gap-5 relative z-0">
+      <div className="h-[309px] w-[10%] bg-white border-2 flex items-center justify-center p-2">
+        <div className="text-center">
+          <h4 className="font-bold text-[#54453E] text-xs">{testimonials[0].name}</h4>
+          <p className="text-xs text-[#54453E]/70">{testimonials[0].title}</p>
+        </div>
+      </div>
+      <div className="h-[309px] w-[40%] bg-white border-2 flex items-center justify-center p-4">
+        <div className="text-center">
+          <h4 className="font-bold text-[#54453E] text-sm">{testimonials[1].name}</h4>
+          <p className="text-xs text-[#54453E]/70">{testimonials[1].title}</p>
+          <p className="text-xs text-[#54453E]/60 mt-2 line-clamp-4">{testimonials[1].content}</p>
+        </div>
+      </div>
+      <div className="h-[309px] w-[41%] bg-white border-2 flex items-center justify-center p-4">
+        <div className="text-center">
+          <h4 className="font-bold text-[#54453E] text-sm">{testimonials[2].name}</h4>
+          <p className="text-xs text-[#54453E]/70">{testimonials[2].title}</p>
+          <p className="text-xs text-[#54453E]/60 mt-2 line-clamp-4">{testimonials[2].content}</p>
+        </div>
+      </div>
+      <div className="h-[309px] w-[9%] bg-white border-2 flex items-center justify-center p-2">
+        <div className="text-center">
+          <h4 className="font-bold text-[#54453E] text-xs">{testimonials[3].name}</h4>
+          <p className="text-xs text-[#54453E]/70">{testimonials[3].title}</p>
+        </div>
       </div>
     </div>
+    
   );
 };

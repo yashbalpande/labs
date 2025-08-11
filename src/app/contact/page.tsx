@@ -5,8 +5,10 @@ import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 const ContactPage = () => {
+    const router = useRouter();
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -35,18 +37,8 @@ const ContactPage = () => {
             // Simulate form submission (you can add your actual submission logic here)
             await new Promise(resolve => setTimeout(resolve, 1000));
             
-            // Show success message
-            setSubmitStatus('success');
-            
-            // Reset form
-            setFormData({
-                fullName: '',
-                email: '',
-                mobile: '',
-                service: '',
-                company: '',
-                message: ''
-            });
+            // Redirect to success page
+            router.push('/contact/success');
 
         } catch (error) {
             console.error('Form submission failed:', error);
@@ -102,13 +94,7 @@ const ContactPage = () => {
 
                 <hr className="border-t border-[#ccc] mb-8" />
 
-                {/* Status Messages - Normal positioning */}
-                {submitStatus === 'success' && (
-                    <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-md">
-                        Thank you! Your message has been submitted successfully. We'll get back to you within 24-48 hours.
-                    </div>
-                )}
-                
+                {/* Error Message */}
                 {submitStatus === 'error' && (
                     <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-md">
                         Oops! Something went wrong. Please try again.

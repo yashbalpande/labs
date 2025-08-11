@@ -196,7 +196,7 @@ export default function Home() {
             /></div>
             <div className="h-36 w-36 border-1 rounded-md border-[#4DD1F4] transform rotate-[-29deg] fall-in"
               style={{ animationDelay: '1.4s' }}><Image
-              src="/vaishali.png"
+              src="/Vaishali.png"
               alt="vaishali"
               height={500}
               width={500}
@@ -204,7 +204,7 @@ export default function Home() {
             /></div>
             <div className="h-36 w-36 border-1 rounded-md border-[#4DD1F4] transform rotate-[-20deg] fall-in"
               style={{ animationDelay: '1.6s' }}><Image
-              src="/ksafe.png"
+              src="/Ksafe.png"
               alt="ksafe"
               height={500}
               width={500}
@@ -230,7 +230,7 @@ export default function Home() {
 
        
         <div className="w-full h-[50vh] flex items-start justify-between mt-20 relative no-scrollbar">
-          <div className="absolute left-0 ">
+          <div className="absolute left-0 top-3 ">
             <Image
               src="/cloud-left.png"
               alt="clouds-left"
@@ -241,7 +241,7 @@ export default function Home() {
           </div>
       
 
-          <div className="absolute right-0 ">
+          <div className="absolute right-0 top-[-20] ">
             <Image
               src="/cloud-right.png"
               alt="clouds-right"
