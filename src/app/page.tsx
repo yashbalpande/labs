@@ -167,8 +167,8 @@ export default function Home() {
 
           </div>
 
-          <div className="flex items-center justify-between mt-5 mr-20 mb-0">
-            <div className="h-36 w-36 border-1 rounded-md border-[#4DD1F4] transform rotate-[34.85deg] ml-10 mr-0 fall-in"
+          <div className="flex items-center justify-between mt-5 mr-10 mb-0">
+            <div className="h-36 w-36 border-1 rounded-md border-[#4DD1F4] transform rotate-[34.85deg] ml-10  mr-0 fall-in"
               style={{ animationDelay: '1s' }}>
               <Image
                 src="/one-teacher.png"
@@ -182,16 +182,16 @@ export default function Home() {
               style={{ animationDelay: '1s' }}><Image
               src="/Payal Jain.png"
               alt="payal-jain"
-              height={400}
-              width={400}
+              height={500}
+              width={500}
               className="rotate-[14.96deg] object-cover mt-10 "
             /></div>
             <div className="h-36 w-36 border-1 rounded-md border-[#4DD1F4] transform rotate-[29deg] m-0 fall-in"
               style={{ animationDelay: '1.2s' }}><Image
               src="/shades.png"
               alt="shades"
-              height={300}
-              width={300}
+              height={500}
+              width={500}
               className="rotate-[-20deg] object-cover mt-5"
             /></div>
             <div className="h-36 w-36 border-1 rounded-md border-[#4DD1F4] transform rotate-[-29deg] fall-in"
@@ -200,15 +200,15 @@ export default function Home() {
               alt="vaishali"
               height={500}
               width={500}
-              className="rotate-[15deg] object-cover mt-10"
+              className="rotate-[20deg] object-cover mt-10"
             /></div>
-            <div className="h-36 w-36 border-1 rounded-md border-[#4DD1F4] transform rotate-[-130deg] fall-in"
+            <div className="h-36 w-36 border-1 rounded-md border-[#4DD1F4] transform rotate-[-20deg] fall-in"
               style={{ animationDelay: '1.6s' }}><Image
               src="/ksafe.png"
               alt="ksafe"
               height={500}
               width={500}
-              className="rotate-[130deg] object-cover "
+              className="rotate-[20deg] object-cover "
             /></div>
 
           </div>

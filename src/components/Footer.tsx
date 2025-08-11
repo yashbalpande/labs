@@ -26,7 +26,7 @@ const Footer = () => {
 
                 {/* Quick Links */}
                 <div>
-                    <h3 className="font-black text-[#54453E] font-lilita text-2xl mb-2">Quick Links</h3>
+                    <h3 className=" text-[#54453E] font-lilita text-2xl mb-2">Quick Links</h3>
                     <ul className="space-y-1 font-montserrat text-lg text-[#54453E]">
                         <li>Home</li>
                         <li>Services</li>
