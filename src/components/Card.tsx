@@ -11,15 +11,14 @@ interface Props {
 
 const Card = ({ icon, index, heading, para, imageSize = 150 }: Props) => {
   return (
-    <div className="bg-[#4E3B34] rounded-md p-4 w-[300px] h-[350px] text-white text-center shadow-lg">
-      <div className="flex justify-center mb-4">
-        <Image src={icon} alt="icon" height={imageSize} width={imageSize} />
+    <div className="bg-[#4E3B34] rounded-md p-4 w-[300px] h-[350px] text-white text-center shadow-lg sm:w-[90vw] sm:h-auto sm:p-2">
+      <div className="flex justify-center mb-2 sm:mb-1 relative w-full" style={{aspectRatio: '1/1'}}>
+        <Image src={icon} alt="icon" fill sizes="100vw" style={{objectFit: 'contain'}} />
       </div>
-      <div className="mt-3 text-left">
-
-      <h1 className="text-sm  opacity-80">{index}</h1>
-      <h2 className="text-2xl font-bold mt-3 mb-3">{heading}</h2>
-      <p className="text-sm opacity-80">{para}</p>
+      <div className="mt-3 sm:mt-1 text-left">
+        <h1 className="text-sm sm:text-xs opacity-80">{index}</h1>
+        <h2 className="text-2xl sm:text-lg font-bold mt-3 sm:mt-1 mb-3 sm:mb-1">{heading}</h2>
+        <p className="text-sm sm:text-xs opacity-80">{para}</p>
       </div>
     </div>
   );

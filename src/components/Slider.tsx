@@ -57,15 +57,15 @@ export const Slider: React.FC = () => {
   };
 
   return (
-    <div className="w-full px-2 py-8 flex justify-center items-center">
-      <div className="w-full max-w-6xl">
+    <div className="w-full px-2 py-8 flex justify-center items-center sm:px-1 sm:py-4">
+      <div className="w-full max-w-6xl sm:max-w-full">
         <SliderLib {...settings}>
           {testimonials.map((t) => (
-            <div key={t.id} className="flex items-stretch justify-center h-full">
-              <div className="bg-white border-2 w-full max-w-md min-w-0 flex flex-col items-center justify-center p-6 mx-auto shadow-lg rounded-xl transition-all duration-300">
-                <h4 className="font-bold text-[#54453E] text-lg mb-1 text-center">{t.name}</h4>
-                <p className="text-xs text-[#54453E]/70 mb-2 text-center">{t.title}</p>
-                <p className="text-xs text-[#54453E]/60 mt-2 line-clamp-4 text-center">{t.content}</p>
+            <div key={t.id} className="flex items-stretch justify-center h-full sm:h-auto">
+              <div className="bg-white border-2 w-full max-w-md sm:max-w-[95vw] min-w-0 flex flex-col items-center justify-center p-6 sm:p-2 mx-auto shadow-lg rounded-xl transition-all duration-300">
+                <h4 className="font-bold text-[#54453E] text-lg sm:text-base mb-1 text-center">{t.name}</h4>
+                <p className="text-xs sm:text-[10px] text-[#54453E]/70 mb-2 text-center">{t.title}</p>
+                <p className="text-xs sm:text-[10px] text-[#54453E]/60 mt-2 line-clamp-4 text-center">{t.content}</p>
               </div>
             </div>
           ))}

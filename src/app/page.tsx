@@ -14,17 +14,16 @@ export default function Home() {
   const logosRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
-    // Reset animation state when component mounts
     setAnimateLogos(false);
     
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setAnimateLogos(true);
-          observer.disconnect(); // Only trigger once
+          observer.disconnect(); 
         }
       },
-      { threshold: 0.3 } // Trigger when 30% of section is visible
+      { threshold: 0.3 } 
     );
 
     if (logosRef.current) {
@@ -95,7 +94,6 @@ export default function Home() {
 
         </div>
       </div>
-
       <div className="relative mt-[25%]">
         <div className="bg-[#4DD1F4] w-full h-[20vh]"></div>
 
@@ -217,8 +215,9 @@ export default function Home() {
       </div>
 
 
-      <div className="w-full  relative bg-white mt-20">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 px-8 max-w-6xl mx-auto">
+      <div className="w-full relative bg-white mt-20">
+        
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 px-8 max-w-6xl mx-auto mb-2">
           <h2 className="text-xl md:text-2xl font-lilita text-[#54453E] font-bold text-center md:text-left">
             Client Observations and <br /> Inference
           </h2>
@@ -228,38 +227,25 @@ export default function Home() {
           </p>
         </div>
 
-       
-        <div className="w-full h-[50vh] flex items-start justify-between mt-20 relative no-scrollbar">
-          <div className="absolute left-0 top-3 ">
-            <Image
-              src="/cloud-left.png"
-              alt="clouds-left"
-              width={300}
-              height={300}
-              className="w-84 h-auto"
-            />
+        
+        <div className="w-full relative h-[120px]">
+          <div className="absolute left-0 top-0 w-[120px] h-[120px] sm:w-[80px] sm:h-[80px] relative">
+            <Image src="/cloud-left.png" alt="clouds-left" fill sizes="100vw" style={{objectFit: 'contain'}} />
           </div>
-      
-
-          <div className="absolute right-0 top-[-20] ">
-            <Image
-              src="/cloud-right.png"
-              alt="clouds-right"
-              width={300}
-              height={300}
-              className="w-84 h-auto"
-            />
-          </div>
-
-          <div className="absolute top-[36%] z-0 w-full">
-            <Slider />
+          <div className="absolute right-0 top-0 w-[120px] h-[120px] sm:w-[80px] sm:h-[80px] relative">
+            <Image src="/cloud-right.png" alt="clouds-right" fill sizes="100vw" style={{objectFit: 'contain'}} />
           </div>
         </div>
 
-        <div className='flex mt-[20%] gap-[10%] justify-center items-center text-[#54453E] p-6'>
-                  <h1 className='text-2xl  border-black text-center font-black text-[#54453E] font-lilita mb-2'>Inside Our 5-Step Growth Engine</h1>
-                  <p className='text-lg text-center text-[#54453E] font-montserrat font-light'>Growth isn't guessed. It's engineered</p>
-                </div>
+
+        <div className="w-full flex justify-center items-start gap-8 mt-[60px] mb-8 px-4">
+          <Slider />
+        </div>
+
+        <div className='flex mt-[10%] gap-[10%] justify-center items-center text-[#54453E] p-6'>
+          <h1 className='text-2xl border-black text-center font-black text-[#54453E] font-lilita mb-2'>Inside Our 5-Step Growth Engine</h1>
+          <p className='text-lg text-center text-[#54453E] font-montserrat font-light'>Growth isn't guessed. It's engineered</p>
+        </div>
       </div>
       <div className="h-[50vh] mb-20 flex items-center justify-center">
         <Image 
