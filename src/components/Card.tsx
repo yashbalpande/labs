@@ -6,7 +6,7 @@ interface Props {
   index: string;
   heading: string;
   para: string;
-  imageSize?: number; // Optional prop for custom image size
+  imageSize?: number; 
 }
 
 const Card = ({ icon, index, heading, para, imageSize = 150 }: Props) => {

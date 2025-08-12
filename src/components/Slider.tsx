@@ -1,4 +1,7 @@
 import React from "react";
+import SliderLib from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 interface Testimonial {
   id: number;
@@ -35,35 +38,39 @@ export const Slider: React.FC = () => {
     }
   ];
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+  autoplaySpeed: 1000,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <div className="flex w-full  m-0 p-0 h-full w-full  gap-5 relative z-0">
-      <div className="h-[309px] w-[10%] bg-white border-2 flex items-center justify-center p-2">
-        <div className="text-center">
-          <h4 className="font-bold text-[#54453E] text-xs">{testimonials[0].name}</h4>
-          <p className="text-xs text-[#54453E]/70">{testimonials[0].title}</p>
-        </div>
-      </div>
-      <div className="h-[309px] w-[40%] bg-white border-2 flex items-center justify-center p-4">
-        <div className="text-center">
-          <h4 className="font-bold text-[#54453E] text-sm">{testimonials[1].name}</h4>
-          <p className="text-xs text-[#54453E]/70">{testimonials[1].title}</p>
-          <p className="text-xs text-[#54453E]/60 mt-2 line-clamp-4">{testimonials[1].content}</p>
-        </div>
-      </div>
-      <div className="h-[309px] w-[41%] bg-white border-2 flex items-center justify-center p-4">
-        <div className="text-center">
-          <h4 className="font-bold text-[#54453E] text-sm">{testimonials[2].name}</h4>
-          <p className="text-xs text-[#54453E]/70">{testimonials[2].title}</p>
-          <p className="text-xs text-[#54453E]/60 mt-2 line-clamp-4">{testimonials[2].content}</p>
-        </div>
-      </div>
-      <div className="h-[309px] w-[9%] bg-white border-2 flex items-center justify-center p-2">
-        <div className="text-center">
-          <h4 className="font-bold text-[#54453E] text-xs">{testimonials[3].name}</h4>
-          <p className="text-xs text-[#54453E]/70">{testimonials[3].title}</p>
-        </div>
+    <div className="w-full px-2 py-8 flex justify-center items-center">
+      <div className="w-full max-w-6xl">
+        <SliderLib {...settings}>
+          {testimonials.map((t) => (
+            <div key={t.id} className="flex items-stretch justify-center h-full">
+              <div className="bg-white border-2 w-full max-w-md min-w-0 flex flex-col items-center justify-center p-6 mx-auto shadow-lg rounded-xl transition-all duration-300">
+                <h4 className="font-bold text-[#54453E] text-lg mb-1 text-center">{t.name}</h4>
+                <p className="text-xs text-[#54453E]/70 mb-2 text-center">{t.title}</p>
+                <p className="text-xs text-[#54453E]/60 mt-2 line-clamp-4 text-center">{t.content}</p>
+              </div>
+            </div>
+          ))}
+        </SliderLib>
       </div>
     </div>
-    
   );
 };
